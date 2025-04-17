@@ -1,0 +1,170 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+section{
+	position: relative;
+	
+	width: 100%;
+	height: 100vh;
+	background: url(https://xatimg.com/image/eDsgYFv2q5ko.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+.wave{
+	position: absolute;
+	width: 100%;
+	height: 143px;
+	bottom: 0;
+	left: 0;
+	background: url(https://res.cloudinary.com/dkdldmet9/image/upload/v1590144427/Png%20photo/wave_ifzn0h.png);
+	animation: animate 10s linear infinite;
+}
+
+.wave:before{
+	content: "";
+	width: 100%;
+	height: 143px;
+	background: url(https://res.cloudinary.com/dkdldmet9/image/upload/v1590144427/Png%20photo/wave_ifzn0h.png);
+	position: absolute;
+	animation: animate-reverse 10s linear infinite;
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+	
+
+}
+.wave:after{
+	content: "";
+	width: 100%;
+	height: 143px;
+	background: url(https://res.cloudinary.com/dkdldmet9/image/upload/v1590144427/Png%20photo/wave_ifzn0h.png);
+	position: absolute;
+	animation-delay:  -5s;
+	animation: animate 20s linear infinite;
+	top: 0;
+	left: 0;
+	opacity: 0.6;
+	
+
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0;
+	}
+	100%
+	{
+		background-position: 1360px;
+	}
+}
+
+@keyframes animate-reverse
+{
+	0%
+	{
+		background-position: 1360px;
+	}
+	100%
+	{
+		background-position: 0;
+	}
+}
+.dorothystanding {
+	position: fixed;
+	bottom: 0;
+	left: 4%;
+	bottom: -10px;
+	z-index: 300;
+}
+.totostanding {
+	position: fixed;
+	bottom: 0;
+	left: 73%;
+	bottom: -20px;
+	z-index: 500;
+}
+.wiztext {
+	color: #FF7F24;
+	margin-top: 10%;
+	font-family: 'TinWoodman';
+	font-size: 8vw;
+	opacity: 0.45;
+	text-align: left;
+	letter-spacing: 10px;
+	position: fixed;
+	width: 200%;
+	min-width: 26000px;
+	z-index: 99000;
+	display: inline-block;
+	  text-shadow: 0 1px 0 hsl(174, 5%, 80%), 0 2px 0 hsl(174, 5%, 75%), 0 3px 0 hsl(174, 5%, 70%), 0 4px 0 hsl(174, 5%, 66%), 0 5px 0 hsl(174, 5%, 64%), 0 6px 0 hsl(174, 5%, 62%), 0 7px 0 hsl(174, 5%, 61%), 0 8px 0 hsl(174, 5%, 60%), 0 0 5px rgba(0, 0, 0, .05), 0 1px 3px rgba(0, 0, 0, .2), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .3);
+
+	animation: whiz 30s infinite linear;
+	-webkit-animation: whiz 60s infinite linear;
+}
+
+
+
+.animated {
+	visibility: visible !important;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+}
+
+
+
+
+ @keyframes whiz {
+ 0% {
+ left: 250%;
+}
+ 100% {
+ left: -250%;
+}
+}
+@-webkit-keyframes whiz {
+ 0% {
+ left: 250%;
+}
+ 100% {
+ left: -250%;
+}
+}
+.x {
+	-webkit-animation: x 20s linear infinite alternate;
+	animation: x 20s linear infinite alternate;
+}
+.y {
+	-webkit-animation: y 10s linear infinite alternate;
+	animation: y 10s linear infinite alternate;
+}
+ @-webkit-keyframes x {
+ 100% {
+ -webkit-transform: translateX(calc(100vw - 3000px));
+ transform: translateX(calc(100vw - 3000px));
+}
+}
+ @keyframes x {
+ 100% {
+ -webkit-transform: translateX(calc(1000vw - 3000px));
+ transform: translateX(calc(1000vw - 3000px));
+}
+}
+@-webkit-keyframes y {
+ 100% {
+ -webkit-transform: translateY(calc(1000vh - 3000px));
+ transform: translateY(calc(100vh - 3000px));
+}
+}
+@keyframes y {
+ 100% {
+ -webkit-transform: translateY(calc(1000vh - 3000px));
+ transform: translateY(calc(1000vh - 3000px));
+}
+}
