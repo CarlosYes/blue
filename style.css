@@ -99,11 +99,11 @@ section{
 }
 
 main{
-  width: 180px;
-  height: 280px;
+  width: 220px;
+  height: 320px;
   position: absolute;
   top: 50%;
-  left: 9%;
+  left: 11%;
   transform: translate(-50%, -50%);
   box-shadow: 20px 5px 30px rgba(0, 0, 0, 0.8);
 }
